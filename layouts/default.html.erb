@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 
-    <title><%= (@item[:title].nil? || @item[:title].empty?) ? 'Ukaza Perdana' : @item[:title] %></title>
+    <title><%= (@item[:title].nil? || @item[:title].empty?) ? config[:site_name] : @item[:title] %></title>
 
-    <meta name="author" content="Ukaza Perdana" />
+    <meta name="author" content="<%= config[:author_name] %>" />
 
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
 
     <link
       href="https://feeds.feedburner.com/ukaza-perdana"
       rel="alternate"
-      title="Ukaza Perdana"
+      title="<%= config[:site_name] %>"
       type="application/atom+xml"
     />
 
@@ -30,7 +30,7 @@
   <body>
     <div class="site">
       <div class="title">
-        <a href="/">Ukaza Perdana</a>
+        <a href="<%= config[:base_url] %>"><%= config[:site_name] %></a>
         <a class="extra" href="/">home</a>
         <a class="extra" href="/about/">about</a>
       </div>
@@ -50,7 +50,7 @@
       <footer>
         <div class="contact">
           <p>
-            Ukaza Perdana
+            <%= config[:author_name] %>
             <br />
             Lead Engineer at
             <a href="https://melalie.com">Melalie</a> x
