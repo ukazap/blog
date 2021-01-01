@@ -1,5 +1,10 @@
 #!/usr/bin/env ruby
 
+compile '/**/feed.xml.erb' do
+  filter :erb
+  write '/feed.xml'
+end
+
 compile '/**/*.erb' do
   filter :erb
   layout '/default.*'

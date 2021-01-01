@@ -9,3 +9,4 @@ gem "kramdown", "~> 2.3"
 gem "adsf", "~> 1.4"
 gem "guard-nanoc", "~> 2.1", :group => :nanoc
 gem "byebug", "~> 11.1", :group => :nanoc
+gem "builder", "~> 3.2"

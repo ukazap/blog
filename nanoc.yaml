@@ -1,4 +1,7 @@
 base_url: https://perdana.dev
+author_uri: https://perdana.dev
+title: Ukaza Perdana
+author_name: Ukaza Perdana
 site_name: Ukaza Perdana
 
 # A list of file extensions that Nanoc will consider to be textual rather than

@@ -1,3 +1,4 @@
+use_helper Nanoc::Helpers::Rendering
 use_helper Nanoc::Helpers::Blogging
 
 def format_date(date)
