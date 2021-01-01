@@ -1,0 +1,8 @@
+---
+---
+<h1>Blog Posts</h1>
+<ul class="posts">
+  <% sorted_articles.each do |article| %>
+    <li><span><%= format_date(article[:created_at]) %></span> &raquo; <a href="<%= article.identifier.without_ext %>"><%= article[:title] %></a></li>
+  <% end %>
+</ul>

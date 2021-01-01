@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title><%= (@item[:title].nil? || @item[:title].empty?) ? 'Ukaza Perdana' : @item[:title] %></title>
+
+    <meta name="author" content="Ukaza Perdana" />
+
+    <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
+
+    <link
+      href="https://feeds.feedburner.com/tom-preston-werner"
+      rel="alternate"
+      title="Ukaza Perdana"
+      type="application/atom+xml"
+    />
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/syntax.css" />
+
+    <!-- Homepage CSS -->
+    <link rel="stylesheet" href="/stylesheet.css">
+  </head>
+  
+  <body>
+    <div class="site">
+      <div class="title">
+        <a href="/">Ukaza Perdana</a>
+        <a class="extra" href="/">home</a>
+        <a class="extra" href="/about/">about</a>
+      </div>
+
+      <% if @item[:kind] == 'article' %>
+        <div class="post">
+          <h1><%= @item[:title] %></h1>
+          <p class="meta"><%= "#{format_date(@item[:created_at])} - #{@item[:location]}" %></p>
+          <%= yield %>
+        </div>
+      <% else %>
+        <div class="home">
+          <%= yield %>
+        </div>
+      <% end %>
+
+      <footer>
+        <div class="contact">
+          <p>
+            Ukaza Perdana
+            <br />
+            Lead Engineer at
+            <a href="https://melalie.com">Melalie</a> x
+            <a href="https://itsavirus.com">Itsavirus</a>
+            <br />
+            <a href="mailto:ukaza@hey.com">ukaza@hey.com</a>
+          </p>
+        </div>
+        <div class="contact">
+          <p>
+            <a href="https://github.com/ukazap">github.com/ukazap</a><br />
+            <a href="https://linkedin.com/in/ukazap">linkedin.com/in/ukazap</a><br />
+            <a href="https://twitter.com/ukazap">twitter.com/ukazap</a><br />
+          </p>
+        </div>
+        <div class="rss">
+          <a href="https://feeds.feedburner.com/tom-preston-werner">
+            <img src="/rss.svg" alt="Subscribe to RSS Feed" />
+          </a>
+        </div>
+      </footer>
+
+      <p><small>Built using <a href="https://nanoc.ws/">Nanoc</a> and <a href="https://turbo.hotwire.dev/">Turbo</a>. Theme stolen from <a href="https://tom.preston-werner.com/">mojombo</a>.</small></p>
+    </div>
+
+    <script type="module">
+      import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+    </script>
+  </body>
+</html>
