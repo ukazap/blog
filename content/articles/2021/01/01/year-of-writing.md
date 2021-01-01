@@ -23,4 +23,4 @@ Write whatever.
 
 Write. Write. Write.
 
-Oh, I almost forgot: happy new year, and may you have a better luck than 2020!
+Oh, I almost forgot: Happy New Year! And may you have a better luck this year!
