@@ -59,6 +59,8 @@ GEM
       parallel (~> 1.12)
       tty-command (~> 0.8)
       tty-which (~> 0.4)
+    nanoc-cachebuster (0.4.0)
+      nanoc (>= 3.3.0)
     nanoc-checking (1.0.0)
       nanoc-cli (~> 4.11, >= 4.11.15)
       nanoc-core (~> 4.11, >= 4.11.15)
@@ -123,6 +125,7 @@ DEPENDENCIES
   highline (~> 2.0)
   kramdown (~> 2.3)
   nanoc (~> 4.11)
+  nanoc-cachebuster (~> 0.4.0)
   rake (~> 13.0)
 
 BUNDLED WITH

@@ -1,5 +1,9 @@
 #!/usr/bin/env ruby
 
+compile '/**/*.css' do
+  write fingerprinted_name(item.identifier.to_s)
+end
+
 compile '/**/feed.xml.erb' do
   filter :erb
   write '/feed.xml'
