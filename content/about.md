@@ -4,7 +4,7 @@ title: About
 
 # Dear Cyberspace,
 
-My name is __Ukaza <small>Putro Satya</small> Perdana__, also known as *ukazap*, *ukz*, *ukzie*, or more recently *ukzilla*. I'm not Japanese, I'm a Sino-Javanese Indonesian. The full name consists of Arabic, Javanese, Sanskrit, and Malay/Indonesian words respectively.
+My name is __Ukaza <small>Putro Satya</small> Perdana__, also known as *ukazap*, *ukz*, *ukzie*, or more recently *ukzilla*. I'm not a Japanese, I'm a Sino-Javanese Indonesian. The full name consists of Arabic, Javanese, Sanskrit, and Malay/Indonesian words respectively.
 
 I am a proud [Rubyist](https://www.ruby-lang.org/) currently based in Bali, Indonesia (Previously lived in Jakarta for 2 years). Born and grew up in the [City of Tofu](https://www.thejakartapost.com/life/2017/02/21/kediris-bah-kacung-tofu-tradition-matters.html) (Kediri, East Java).
 
