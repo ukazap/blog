@@ -2,12 +2,15 @@ a {
   color: #cc342d;
 }
 
-.container {
-  max-width: 640px;
+@media (min-width: 80rem) {
+  .container {
+    max-width: 640px;
+  }
 }
 
 nav.container {
-  margin: 3em auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
   nav.container .site-name {
     font-weight: bold;
