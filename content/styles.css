@@ -2,43 +2,41 @@ a {
   color: #cc342d;
 }
 
-nav.container {
-  margin-top: 3em;
+.container {
+  max-width: 640px;
+}
+
+nav {
+  margin-top: 4em;
   margin-bottom: 3em;
 }
-  nav.container .site-name {
+  nav .nav-item {
+    margin: 1em;
+    font-size: 1.2em;
+  }
+  nav .site-name {
     font-weight: bold;
     border: 2px solid #cc342d;
+    margin: 0em;
     padding: 1em;
     margin-right: 1em;
   }
-  nav.container .site-name:hover {
+  nav .site-name:hover {
     border-color: #606c76;
   }
-  nav.container .nav-item {
-    margin: auto 0.5em;
+  nav .nav-item .rss-icon {
+    width: 1em;
+    margin-bottom: -0.1em;
   }
 
-article header h1 {
-  margin-bottom: 0px;
+article {
+  text-align: justify;
 }
 
-footer.container {
+footer {
   margin: 4em auto;
   font-size: 0.8em;
 }
-  footer.container .row {
-    
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
-  footer.container .column.avatar img {
+  footer .avatar img {
     border-radius: 100%;
-    width: 150px;
-  }
-  footer.container .column.contact {
-    min-width: 18em;
-  }
-  footer.container .column.rss img {
-    width: 3em;
   }

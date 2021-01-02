@@ -6,15 +6,10 @@
     <title><%= (@item[:title].nil? || @item[:title].empty?) ? config[:site_name] : @item[:title] %></title>
 
     <meta name="author" content="<%= config[:author_name] %>" />
-
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link
-      href="https://feeds.feedburner.com/ukaza-perdana"
-      rel="alternate"
-      title="<%= config[:site_name] %>"
-      type="application/atom+xml"
-    />
+    <link href="https://feeds.feedburner.com/ukaza-perdana" rel="alternate" title="<%= config[:site_name] %>" type="application/atom+xml">
 
     <link rel="icon" href="https://avatars3.githubusercontent.com/u/6721248?s=32&v=4"><!-- 32×32 -->
     <link rel="apple-touch-icon" href="https://avatars3.githubusercontent.com/u/6721248?s=180&v=4"><!-- 180×180 -->
@@ -31,69 +26,46 @@
   </head>
   
   <body>
-    <nav class="container">
-      <a class="site-name" href="<%= config[:base_url] %>"><%= config[:site_name] %></a>
-      <a class="nav-item" href="/">home</a>
-      <a class="nav-item" href="/about/">about</a>
-    </nav>
+    <div class="container">
+      <nav class="row">
+        <div class="column">
+          <a class="nav-item site-name" href="<%= config[:base_url] %>"><%= config[:site_name] %></a>
+          <a class="nav-item" href="/">home</a>
+          <a class="nav-item" href="/about/">about</a>
+          <a class="nav-item" href="https://feeds.feedburner.com/ukaza-perdana"><img src="/rss.svg" class="rss-icon" alt="Subscribe to RSS Feed" /></a>
+        </div>
+      </nav>
 
-    <section class="container">
-      <% if @item[:kind] == 'article' %>
-        <article>
-          <header>
-            <h1><%= @item[:title] %></h1>
-            <p class="meta"><%= "#{format_date(@item[:created_at])} - #{@item[:location]}" %></p>
-          </header>
+      <main class="row">
+        <% if @item[:kind] == 'article' %>
+          <article class="column">
+            <header>
+              <h1><%= @item[:title] %></h1>
+              <p class="meta"><%= "#{format_date(@item[:created_at])} - #{@item[:location]}" %></p>
+            </header>
 
-          <%= yield %>
+            <%= yield %>
 
-          <script src="https://utteranc.es/client.js"
-            repo="ukazap/blog"
-            issue-term="pathname"
-            theme="github-light"
-            crossorigin="anonymous"
-            async>
-          </script>
-        </article>
-      <% else %>
-        <article>
-          <%= yield %>
-        </article>
-      <% end %>
-    </section>
+            <script src="https://utteranc.es/client.js" repo="ukazap/blog" issue-term="pathname" theme="boxy-light" crossorigin="anonymous" async />
+            </script>
+          </article>
+        <% else %>
+          <article class="column">
+            <%= yield %>
+          </article>
+        <% end %>
+      </main>
 
-    <footer class="container">
-      <div class="row">
-        <p class="column avatar">
-          <img src="<%= config[:avatar_url] %>">
-        </p>
-
-        <p class="column contact">
+      <footer class="row">
+        <div class="column">
           <%= config[:author_name] %>
           <br />
-          Lead Engineer at
-          <a href="https://melalie.com">Melalie</a> x
-          <a href="https://itsavirus.com">Itsavirus</a>
-          <br />
-          <a href="mailto:ukaza@hey.com">ukaza@hey.com</a>
-        </p>
-
-        <p class="column contact">
+          <a href="mailto:ukaza@hey.com">ukaza@hey.com</a><br /><br />
           <a href="https://github.com/ukazap">github.com/ukazap</a><br />
           <a href="https://linkedin.com/in/ukazap">linkedin.com/in/ukazap</a><br />
-          <a href="https://twitter.com/ukazap">twitter.com/ukazap</a><br />
-        </p>
-
-        <p class="column rss">
-          <a href="https://feeds.feedburner.com/ukaza-perdana">
-            <img src="/rss.svg" alt="Subscribe to RSS Feed" />
-          </a>
-        </p>
-      </div>
-
-      <div class="row">
-        <p class="column powered"><small>Built using <a href="https://github.com/ukazap/blog">Nanoc</a>.</small></p>
-      </div>
-    </footer>
+          <a href="https://twitter.com/ukazap">twitter.com/ukazap</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
