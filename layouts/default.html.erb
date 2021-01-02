@@ -40,6 +40,13 @@
           <h1><%= @item[:title] %></h1>
           <p class="meta"><%= "#{format_date(@item[:created_at])} - #{@item[:location]}" %></p>
           <%= yield %>
+          <script src="https://utteranc.es/client.js"
+            repo="ukazap/blog"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+          </script>
         </div>
       <% else %>
         <div class="home">

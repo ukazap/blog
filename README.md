@@ -6,7 +6,10 @@ This repository generates what you see on my weblog (<https://ukaza.perdana.dev>
 
 This blog setup is powered by a static site generator called [Nanoc](https://nanoc.ws/).
 
-The frontend assets are kept to a minimum: tiny stylesheets and next to no JavaScript except [Turbo](http://turbo.hotwire.dev/) for faster navigation a-la single-page apps.
+The frontend assets are kept to a minimum:
+- Tiny stylesheets
+- [Turbo](https://turbo.hotwire.dev/) for faster navigation a-la single-page apps.
+- [Utterances](https://utteranc.es/) for comment section powered by GitHub issues.
 
 ## Usage
 
