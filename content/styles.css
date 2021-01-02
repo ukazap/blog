@@ -11,15 +11,15 @@ nav {
   margin-bottom: 3em;
 }
   nav .nav-item {
-    margin: 1em;
+    margin: 0.6em;
     font-size: 1.2em;
   }
   nav .site-name {
     font-weight: bold;
     border: 2px solid #cc342d;
     margin: 0em;
-    padding: 1em;
-    margin-right: 1em;
+    padding: 0.6em;
+    margin-right: 0.6em;
   }
   nav .site-name:hover {
     border-color: #606c76;
