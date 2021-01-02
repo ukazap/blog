@@ -2,12 +2,6 @@ a {
   color: #cc342d;
 }
 
-@media (min-width: 80rem) {
-  .container {
-    max-width: 640px;
-  }
-}
-
 nav.container {
   margin-top: 3em;
   margin-bottom: 3em;
@@ -39,7 +33,8 @@ footer.container {
     padding-bottom: 1em;
   }
   footer.container .column.avatar img {
-    width: 200px;
+    border-radius: 100%;
+    width: 150px;
   }
   footer.container .column.contact {
     min-width: 18em;
