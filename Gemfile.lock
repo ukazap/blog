@@ -5,6 +5,7 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     adsf (1.4.5)
       rack (>= 1.0.0, < 3.0.0)
+    awesome_print (1.8.0)
     builder (3.2.4)
     byebug (11.1.3)
     coderay (1.1.3)
@@ -19,6 +20,9 @@ GEM
     diff-lcs (1.4.4)
     ffi (1.14.2)
     formatador (0.2.5)
+    gingerice (1.3.0)
+      addressable
+      awesome_print
     guard (2.16.2)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
@@ -114,6 +118,7 @@ DEPENDENCIES
   adsf (~> 1.4)
   builder (~> 3.2)
   byebug (~> 11.1)
+  gingerice (~> 1.3)
   guard-nanoc (~> 2.1)
   highline (~> 2.0)
   kramdown (~> 2.3)

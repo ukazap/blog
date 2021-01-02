@@ -22,4 +22,7 @@ bx nanoc live
 
 # Create a new blog article
 bx rake compose
+
+# Proofread
+bx rake proofread
 ```

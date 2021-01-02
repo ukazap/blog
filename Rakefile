@@ -1,4 +1,5 @@
 require "highline/import"
+require "gingerice"
 
 desc "Create a new article"
 task :compose do |t|
@@ -27,5 +28,22 @@ created_at: #{Time.now}
     ARTICLE
 
     say "Created: #{path}"
+  end
+end
+
+require "byebug"
+desc "Proofread articles"
+task :proofread do |t|
+  parser = Gingerice::Parser.new
+
+  Dir.glob('content/articles/*').each do |article|
+    say "Proofreading #{article}"
+    text = File.read(article).split("---\n").last.strip
+    sentences = text.scan(/[^\.!?]+[\.!?]/).map(&:strip) # naively split to sentences
+    sentences.each do |s|
+      @result = parser.parse s
+    end
+
+    pp @result
   end
 end
