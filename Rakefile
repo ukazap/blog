@@ -31,7 +31,6 @@ created_at: #{Time.now}
   end
 end
 
-require "byebug"
 desc "Proofread articles"
 task :proofread do |t|
   parser = Gingerice::Parser.new

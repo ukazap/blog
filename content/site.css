@@ -1,0 +1,46 @@
+a {
+  color: #cc342d;
+}
+
+.container {
+  max-width: 640px;
+}
+
+nav.container {
+  margin: 3em auto;
+}
+  nav.container .site-name {
+    font-weight: bold;
+    border: 2px solid #cc342d;
+    padding: 1em;
+    margin-right: 1em;
+  }
+  nav.container .site-name:hover {
+    border-color: #606c76;
+  }
+  nav.container .nav-item {
+    margin: auto 0.5em;
+  }
+
+article header h1 {
+  margin-bottom: 0px;
+}
+
+footer.container {
+  margin: 4em auto;
+  font-size: 0.8em;
+}
+  footer.container .row {
+    
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  footer.container .column.avatar img {
+    width: 200px;
+  }
+  footer.container .column.contact {
+    min-width: 18em;
+  }
+  footer.container .column.rss img {
+    width: 3em;
+  }

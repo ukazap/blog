@@ -20,26 +20,34 @@
     <link rel="apple-touch-icon" href="https://avatars3.githubusercontent.com/u/6721248?s=180&v=4"><!-- 180×180 -->
     <link rel="manifest" href="/manifest.webmanifest">
 
-    <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="/syntax.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="/site.css">
 
-    <!-- Homepage CSS -->
-    <link rel="stylesheet" href="/stylesheet.css">
+    <script type="module">
+      import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+    </script>
   </head>
   
   <body>
-    <div class="site">
-      <div class="title">
-        <a href="<%= config[:base_url] %>"><%= config[:site_name] %></a>
-        <a class="extra" href="/">home</a>
-        <a class="extra" href="/about/">about</a>
-      </div>
+    <nav class="container">
+      <a class="site-name" href="<%= config[:base_url] %>"><%= config[:site_name] %></a>
+      <a class="nav-item" href="/">home</a>
+      <a class="nav-item" href="/about/">about</a>
+    </nav>
+
+    <section class="container">
 
       <% if @item[:kind] == 'article' %>
-        <div class="post">
-          <h1><%= @item[:title] %></h1>
-          <p class="meta"><%= "#{format_date(@item[:created_at])} - #{@item[:location]}" %></p>
+        <article>
+          <header>
+            <h1><%= @item[:title] %></h1>
+            <p class="meta"><%= "#{format_date(@item[:created_at])} - #{@item[:location]}" %></p>
+          </header>
+
           <%= yield %>
+
           <script src="https://utteranc.es/client.js"
             repo="ukazap/blog"
             issue-term="pathname"
@@ -47,44 +55,46 @@
             crossorigin="anonymous"
             async>
           </script>
-        </div>
+        </article>
       <% else %>
-        <div class="home">
+        <article>
           <%= yield %>
-        </div>
+        </article>
       <% end %>
+    </section>
 
-      <footer>
-        <div class="contact">
-          <p>
-            <%= config[:author_name] %>
-            <br />
-            Lead Engineer at
-            <a href="https://melalie.com">Melalie</a> x
-            <a href="https://itsavirus.com">Itsavirus</a>
-            <br />
-            <a href="mailto:ukaza@hey.com">ukaza@hey.com</a>
-          </p>
-        </div>
-        <div class="contact">
-          <p>
-            <a href="https://github.com/ukazap">github.com/ukazap</a><br />
-            <a href="https://linkedin.com/in/ukazap">linkedin.com/in/ukazap</a><br />
-            <a href="https://twitter.com/ukazap">twitter.com/ukazap</a><br />
-          </p>
-        </div>
-        <div class="rss">
+    <footer class="container">
+      <div class="row">
+        <p class="column avatar">
+          <img src="<%= config[:avatar_url] %>">
+        </p>
+
+        <p class="column contact">
+          <%= config[:author_name] %>
+          <br />
+          Lead Engineer at
+          <a href="https://melalie.com">Melalie</a> x
+          <a href="https://itsavirus.com">Itsavirus</a>
+          <br />
+          <a href="mailto:ukaza@hey.com">ukaza@hey.com</a>
+        </p>
+
+        <p class="column contact">
+          <a href="https://github.com/ukazap">github.com/ukazap</a><br />
+          <a href="https://linkedin.com/in/ukazap">linkedin.com/in/ukazap</a><br />
+          <a href="https://twitter.com/ukazap">twitter.com/ukazap</a><br />
+        </p>
+
+        <p class="column rss">
           <a href="https://feeds.feedburner.com/ukaza-perdana">
             <img src="/rss.svg" alt="Subscribe to RSS Feed" />
           </a>
-        </div>
-      </footer>
+        </p>
+      </div>
 
-      <p><small>Built using <a href="https://nanoc.ws/">Nanoc</a> and <a href="https://turbo.hotwire.dev/">Turbo</a>. Theme stolen from <a href="https://tom.preston-werner.com/">mojombo</a>.</small></p>
-    </div>
-
-    <script type="module">
-      import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
-    </script>
+      <div class="row">
+        <p class="column powered"><small>Built using <a href="https://github.com/ukazap/blog">Nanoc</a>.</small></p>
+      </div>
+    </footer>
   </body>
 </html>
