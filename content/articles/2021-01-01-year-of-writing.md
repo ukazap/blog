@@ -1,8 +1,8 @@
 ---
 kind: article
-created_at: 2021/01/01
 title: The Year of Writing
 location: North Kuta, Bali
+created_at: 2021/01/01 21:00:00 +0800
 ---
 
 Committing to a new year's resolution is not easy especially if you set very specific goals and key results. Commit to a [*new year's theme*](https://www.youtube.com/watch?v=NVGuFdX5guE) instead. Because it's vague, you can alter the key results while staying in theme.
