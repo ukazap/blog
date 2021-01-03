@@ -40,7 +40,7 @@
         <% if @item[:kind] == 'article' %>
           <article class="column">
             <header>
-              <h1><a href="<%= @item.identifier.without_ext %>"><%= @item[:title] %></a></h1>
+              <h1><%= @item[:title] %></h1>
               <p class="meta"><%= "#{format_date(@item[:created_at])} - #{@item[:location]}" %></p>
             </header>
 
