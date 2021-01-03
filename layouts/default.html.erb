@@ -29,9 +29,9 @@
     <div class="container">
       <nav class="row">
         <div class="column">
-          <a class="nav-item site-name" href="<%= config[:base_url] %>"><%= config[:site_name] %></a>
+          <a class="nav-item site-name" href="/"><%= config[:site_name].downcase %></a>
           <a class="nav-item" href="/">home</a>
-          <a class="nav-item" href="/about/">about</a>
+          <a class="nav-item" href="/articles/about">about</a>
           <a class="nav-item" href="https://feeds.feedburner.com/ukaza-perdana"><img src="/rss.svg" class="rss-icon" alt="Subscribe to RSS Feed" /></a>
         </div>
       </nav>
@@ -46,7 +46,7 @@
 
             <%= yield %>
 
-            <script src="https://utteranc.es/client.js" repo="ukazap/blog" issue-term="pathname" theme="boxy-light" crossorigin="anonymous" async />
+            <script src="https://utteranc.es/client.js" repo="ukazap/blog" issue-term="pathname" theme="boxy-light" crossorigin="anonymous" async>
             </script>
           </article>
         <% else %>

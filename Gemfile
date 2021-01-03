@@ -8,6 +8,7 @@ gem "nanoc", "~> 4.11"
 
 gem "builder", "~> 3.2"
 gem "kramdown", "~> 2.3"
+gem "kramdown-parser-gfm", "~> 1.1"
 
 group :development do
   gem "gingerice", "~> 1.3"
@@ -21,4 +22,5 @@ group :development, :nanoc do
   gem "guard-nanoc", "~> 2.1"
   gem "nanoc-cachebuster", "~> 0.4.0"
 end
+
 
