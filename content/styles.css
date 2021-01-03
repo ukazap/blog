@@ -25,21 +25,22 @@ nav {
     margin-bottom: -0.1em;
   }
 
-article {
-  margin-right: 35%;
+article header h1 {
+  margin-bottom: 0.1em;
 }
-  article header h1 {
-    margin-bottom: 0.1em;
-  }
-  article header .meta {
-    font-size: 0.8em;
-  }
-  article .aside {
-    display: block;
-    margin: 1em;
-    font-size: 0.9em;
-  }
+article header .meta {
+  font-size: 0.8em;
+}
+article .aside {
+  display: block;
+  margin: 1em;
+  font-size: 0.9em;
+}
+
 @media (min-width: 80.0rem) {
+  article {
+    margin-right: 35%;
+  }
   article .aside {
     display: inline;
     float: right; 
