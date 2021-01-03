@@ -23,7 +23,7 @@ I studied _Teknik Informatika_ (CompSci) at [UNP Kediri](https://unpkediri.ac.id
 
 I am a proud [Rubyist](https://www.ruby-lang.org/). I picked up the language during my sophomore, it was a world of difference, the alternatives were either useless or clunky to work with. <span class="aside">I used many things: PHP, Java, C#, Python, etc.</span> Ruby is one of the programming languages built for humans first and machines second (to be fair, performance is now decent), and it literally changed my life and I got my first full-time job thanks to Ruby.
 
-## Work!
+## Work work work
 
 Around the time when I was going to receive my bachelor's degree, Tarina reached out to me on LinkedIn and shared the SDE job opening at [Jurnal](https://www.jurnal.id/id/). <span class="aside">Tarina, if you're reading this, I owe you a great deal, you changed my life and I thank you for that.</span> I jumped at the opportunity and have never regretted it. This was also the first time I moved out of my parents' house. Working at Jurnal is a truly humbling experience.
 
@@ -37,4 +37,8 @@ I enjoys laying a foundation on which other developers build. I am pragmatically
 
 I believe tech can solve many things but not everything should be solved with tech. For instance, I like my rice cooker dumb and not connected to the Internet because it only has one simple job: cook rice, and the laws of physics will suffice. <span class="aside">I'm not a luddite, and that would be oxymoronic for a tech worker.</span> Low tech is better than wrong application of tech that doesn't add value or even make things worse.
 
-I want to write better and use fewer first-person pronouns in my writings, hence this blog. <span class="aside">Also, [_The Year of Writing_](/articles/2021-01-01-year-of-writing/).</span>
+## About this site
+
+Perhaps this is my dozenth attempt at blogging, but I do want to write better, so I mean it this time. <span class="aside">Also, [_The Year of Writing_](/articles/2021-01-01-year-of-writing/).</span>
+
+I built this blog using Nanoc SSG, I originally stole [mojombo](https://tom.preston-werner.com/) but later decided to design myself, it's a tweak of Milligram CSS. I learned to implement the margin notes thanks to [Kenneth Friedman](https://kennethfriedman.org/thoughts/2019/marginal-notes/). I added Turbo to make this blog feel snappy. For more details, [the code is available on GitHub](https://github.com/ukazap/blog).
