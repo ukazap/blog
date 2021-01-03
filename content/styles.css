@@ -2,10 +2,6 @@ a {
   color: #cc342d;
 }
 
-.container {
-  max-width: 640px;
-}
-
 nav {
   margin-top: 4em;
   margin-bottom: 3em;
@@ -30,7 +26,28 @@ nav {
   }
 
 article {
-  text-align: justify;
+  margin-right: 35%;
+}
+  article header h1 {
+    margin-bottom: 0.1em;
+  }
+  article header .meta {
+    font-size: 0.8em;
+  }
+  article .aside {
+    display: block;
+    margin: 1em;
+    font-size: 0.9em;
+  }
+@media (min-width: 80.0rem) {
+  article .aside {
+    display: inline;
+    float: right; 
+    position: relative; 
+    width: 20vw;
+    margin-right: -22vw;
+    font-size: 0.8em;
+  }  
 }
 
 footer {
