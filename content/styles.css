@@ -1,4 +1,9 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
 .turbo-progress-bar {
+  height: 3px;
   background-color: #cc342d;
 }
 
