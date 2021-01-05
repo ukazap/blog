@@ -9,7 +9,11 @@ created_at: 2021/01/01 00:00:00 +0800
 
 My name is Ukaza Putro Satya Perdana, also known as *ukazap*, *ukz*, *ukzie*, or more recently *ukzilla*. _Ukaza_ isn't Japanese, I'm a Sino-Javanese Indonesian. <span class="aside">My full name consists of Arabic, Javanese, Sanskrit, and Malay/Indonesian words respectively.</span>
 
-I was born and grew up in the [City of Tofu](https://www.thejakartapost.com/life/2017/02/21/kediris-bah-kacung-tofu-tradition-matters.html) (Kediri, East Java). Childhood was fun: I got to taste two different worlds: _(1)_ cycling to the countryside, playing in the mud, flying a kite, etc. <span class="aside">The perks of living in the outskirts of town.</span> and _(2)_ gaming consoles: Nintendo Famicom/NES, SNES, SEGA Genesis, Sony PlayStation 1 & 2. <span class="aside">I had SNES, to play other systems I would visit my friends or gaming rental in the weekends.</span> I probably played too much video games, even my grades took a nosedive. Well worth it.
+I was born and grew up in the [City of Tofu](https://www.thejakartapost.com/life/2017/02/21/kediris-bah-kacung-tofu-tradition-matters.html) (Kediri, East Java). Childhood was fun: I got to taste two different worlds:
+
+_(1)_ cycling to the countryside, playing in the mud, flying a kite, etc. <span class="aside">The perks of living in the outskirts of town.</span>
+
+and _(2)_ gaming consoles: Nintendo Famicom/NES, SNES, SEGA Genesis, Sony PlayStation 1 & 2. <span class="aside">I had SNES, to play other systems I would visit my friends or gaming rental in the weekends.</span> I probably played too much video games, even my grades took a nosedive. Well worth it.
 
 ![My Photo](https://avatars3.githubusercontent.com/u/6721248?s=200&v=4) <span class="aside">I don't actually look like this in person, I have a condition called [RBF](https://en.wikipedia.org/wiki/Resting_bitch_face).</span>
 
