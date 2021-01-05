@@ -13,7 +13,7 @@ The frontend assets are kept to a minimum:
 
 ## Usage
 
-To use this, you need to install Ruby 2.7 and above.
+To use this, you need to install Ruby 2.6 or above. When that done, clone this repo and run `bundle install`.
 
 There are several commands for managing the blog:
 
