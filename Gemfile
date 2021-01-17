@@ -20,7 +20,6 @@ group :development, :nanoc do
   gem "adsf", "~> 1.4"
   gem "byebug", "~> 11.1"
   gem "guard-nanoc", "~> 2.1"
-  gem "nanoc-cachebuster", "~> 0.4.0"
 end
 
 
