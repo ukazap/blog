@@ -7,6 +7,10 @@ body {
   background-color: #cc342d;
 }
 
+.downcase {
+  text-transform: lowercase;
+}
+
 a {
   color: #cc342d;
 }
@@ -52,12 +56,12 @@ article .aside {
   }
   article .aside {
     display: inline;
-    float: right; 
-    position: relative; 
+    float: right;
+    position: relative;
     width: 20vw;
     margin-right: -22vw;
     font-size: 0.8em;
-  }  
+  }
 }
 
 footer {
