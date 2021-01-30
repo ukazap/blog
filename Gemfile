@@ -20,6 +20,5 @@ group :development, :nanoc do
   gem "adsf", "~> 1.4"
   gem "byebug", "~> 11.1"
   gem "guard-nanoc", "~> 2.1"
+  gem "webrick", "~> 1.7"
 end
-
-
