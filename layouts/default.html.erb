@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
-    <link rel="stylesheet" href="<%= fingerprinted_name("/styles.css") %>">
+    <link rel="stylesheet" href="<%= @items["/styles.css"].path %>">
 
     <script type="module">
       import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
@@ -57,16 +57,14 @@
         <% end %>
       </main>
 
-      <footer class="row">
-        <div class="column">
-          <%= config[:author_name] %><br />
-          Lead Engineer at <a href="https://melalie.com">Melalie</a> x <a href="https://itsavirus.com">Itsavirus</a><br />
-          <a href="mailto:ukaza@hey.com">ukaza@hey.com</a><br /><br />
-          <a href="https://keybase.io/ukazap">keybase.io/ukazap</a><br />
-          <a href="https://github.com/ukazap">github.com/ukazap</a><br />
-          <a href="https://linkedin.com/in/ukazap">linkedin.com/in/ukazap</a><br />
-          <a href="https://twitter.com/ukazap">twitter.com/ukazap</a>
-        </div>
+      <footer>
+        <%= config[:author_name] %><br />
+        Lead Engineer at <a href="https://melalie.com">Melalie</a> x <a href="https://itsavirus.com">Itsavirus</a><br />
+        <a href="mailto:ukaza@hey.com">ukaza@hey.com</a><br /><br />
+        <a href="https://keybase.io/ukazap">keybase.io/ukazap</a><br />
+        <a href="https://github.com/ukazap">github.com/ukazap</a><br />
+        <a href="https://linkedin.com/in/ukazap">linkedin.com/in/ukazap</a><br />
+        <a href="https://twitter.com/ukazap">twitter.com/ukazap</a>
       </footer>
     </div>
   </body>
