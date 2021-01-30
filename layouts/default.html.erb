@@ -28,13 +28,22 @@
 
   <body>
     <div class="container">
-      <nav class="row">
-        <div class="column">
-          <a class="nav-item downcase site-name" href="/"><%= config[:site_name] %></a>
-          <a class="nav-item downcase" href="/">Home</a>
-          <a class="nav-item downcase" href="/articles/about">About</a>
-          <a class="nav-item" href="https://feeds.feedburner.com/ukaza-perdana"><img src="/rss.svg" class="rss-icon" alt="Subscribe to RSS Feed" /></a>
+      <nav>
+        <div class="nav-item site-name">
+          <a class="upcase" href="/"><%= config[:site_name] %></a>
         </div>
+        <div class="nav-item">
+          <a class="upcase" href="/">Home</a>
+        </div>
+        <div class="nav-item">
+          <a class="upcase" href="https://github.com/ukazap">Projects</a>
+        </div>
+        <div class="nav-item">
+          <a class="upcase" href="/articles/about">About</a>
+        </div>
+        <a class="nav-item rss" href="https://feeds.feedburner.com/ukaza-perdana">
+          <img src="/rss.svg" class="rss-icon" alt="Subscribe to RSS Feed" />
+        </a>
       </nav>
 
       <main class="row">

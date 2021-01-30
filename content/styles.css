@@ -1,14 +1,14 @@
-body {
+* {
   font-family: 'Noto Sans', sans-serif;
 }
 
 .turbo-progress-bar {
-  height: 3px;
+  height: 1em;
   background-color: #cc342d;
 }
 
-.downcase {
-  text-transform: lowercase;
+.upcase {
+  text-transform: uppercase;
 }
 
 a {
@@ -18,25 +18,35 @@ a {
 nav {
   margin-top: 4em;
   margin-bottom: 3em;
+  height: 12em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-self: flex-end;
 }
   nav .nav-item {
-    margin: 0.4em;
     font-size: 1.2em;
   }
   nav .site-name {
-    font-weight: bold;
-    border: 2px solid #cc342d;
-    margin: 0em;
-    padding: 0.4em;
-    margin-right: 0.4em;
+    padding-bottom: 0.5em;
   }
-  nav .site-name:hover {
-    border-color: #606c76;
-  }
+    nav .site-name a {
+      padding: 0.4em;
+      font-weight: bold;
+      border: 2px solid #cc342d;
+    }
+    nav .site-name a:hover  {
+      border-color: #606c76;
+    }
   nav .nav-item .rss-icon {
     width: 1em;
-    margin-bottom: -0.1em;
   }
+
+footer {
+  margin-top: 4em !important;
+  margin-bottom: 4em !important;
+  font-size: 0.8em;
+}
 
 article header h1 {
   margin-bottom: 0.1em;
@@ -49,8 +59,41 @@ article .aside {
   margin: 1em;
   font-size: 0.9em;
 }
+article pre {
+  border-left: 0.3rem solid #cc342d !important;
+}
+
+.posts ul {
+  list-style: none;
+}
+  .posts ul li {
+    margin-bottom: 1em;
+  }
+.posts .title {
+  font-size: 1.2em;
+  margin-bottom: 0em;
+}
+/*.posts h1 {
+  font-size: 1.5em;
+}*/
 
 @media (min-width: 80.0rem) {
+  nav {
+    height: auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+    nav .site-name {
+      padding-bottom: 0em;
+    }
+    nav .nav-item {
+      margin-right: 1em;
+    }
+    nav .rss {
+      display: flex;
+    }
+
   article {
     margin-right: 35%;
   }
@@ -63,11 +106,3 @@ article .aside {
     font-size: 0.8em;
   }
 }
-
-footer {
-  margin: 4em auto;
-  font-size: 0.8em;
-}
-  footer .avatar img {
-    border-radius: 100%;
-  }
