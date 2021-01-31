@@ -65,7 +65,6 @@
             <header>
               <h1><%= @item[:title] %></h1>
               <p class="meta">📅 <%= "#{format_date(@item[:created_at])}" %> <a href="https://www.google.com/maps/search/<%= @item[:location].gsub(/\s/, "+") %>">📍 <%= @item[:location] %></a> <a href="https://github.com/ukazap/blog/edit/main/content<%= @item.identifier %>" title="Suggest an edit">🖊️</a></p>
-              <p><a href="https://unsplash.com/photos/<%= thumbnail_id %>"><img src="<%= thumbnail_url %>"></a></p>
             </header>
 
             <%= yield %>
