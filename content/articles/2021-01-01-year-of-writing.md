@@ -1,6 +1,7 @@
 ---
 kind: article
 title: The Year of Writing
+description: "I'm not going to write an epic, by the way."
 location: North Kuta, Bali
 created_at: 2021/01/01 21:00:00 +0800
 ---

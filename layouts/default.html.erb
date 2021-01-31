@@ -9,6 +9,13 @@
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta property="og:site_name" content="<%= config[:site_name] %>">
+    <meta property="og:title" content="<%= (@item[:title].nil? || @item[:title].empty?) ? config[:site_name] : @item[:title] %>">
+    <meta property="og:description" content="<%= @item[:description] %>">
+    <meta property="og:url" content="<%= "#{config[:base_url]}#{@item.identifier.without_ext}" %>">
+    <meta property="og:image" content="https://picsum.photos/seed/<%= @item.identifier.without_ext.gsub("/", "-") %>/1000/700">
+    <meta name="twitter:card" content="https://picsum.photos/seed/<%= @item.identifier.without_ext.gsub("/", "-") %>/1000/700">
+
     <link href="https://feeds.feedburner.com/ukaza-perdana" rel="alternate" title="<%= config[:site_name] %>" type="application/atom+xml">
 
     <link rel="icon" href="https://avatars3.githubusercontent.com/u/6721248?s=32&v=4"><!-- 32×32 -->
