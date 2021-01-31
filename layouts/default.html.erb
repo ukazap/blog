@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <%-
+      title = (@item[:title].nil? || @item[:title].empty?) ? config[:site_name] : @item[:title]
+      thumbnail_id = @item[:thumbnail] || "qKkwIljWVww"
+      thumbnail_url = "https://source.unsplash.com/#{thumbnail_id}/1280x720"
+    %>
     <meta charset="utf-8">
-
-    <title><%= (@item[:title].nil? || @item[:title].empty?) ? config[:site_name] : @item[:title] %></title>
+    <title><%= title %></title>
 
     <meta name="author" content="<%= config[:author_name] %>" />
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta property="og:site_name" content="<%= config[:site_name] %>">
-    <meta property="og:title" content="<%= (@item[:title].nil? || @item[:title].empty?) ? config[:site_name] : @item[:title] %>">
+    <meta property="og:title" content="<%= title %>">
     <meta property="og:description" content="<%= @item[:description] %>">
     <meta property="og:url" content="<%= "#{config[:base_url]}#{@item.identifier.without_ext}" %>">
-    <meta property="og:image" content="https://picsum.photos/seed/<%= @item.identifier.without_ext.gsub("/", "-") %>/1000/700">
-    <meta name="twitter:card" content="https://picsum.photos/seed/<%= @item.identifier.without_ext.gsub("/", "-") %>/1000/700">
+
+
+    <meta property="og:image" content="<%= thumbnail_url %>">
+    <meta name="twitter:card" content="<%= thumbnail_url %>">
 
     <link href="https://feeds.feedburner.com/ukaza-perdana" rel="alternate" title="<%= config[:site_name] %>" type="application/atom+xml">
 
@@ -59,6 +65,7 @@
             <header>
               <h1><%= @item[:title] %></h1>
               <p class="meta"><%= "#{format_date(@item[:created_at])}" %> - <a href="https://www.google.com/maps/search/<%= @item[:location].gsub(/\s/, "+") %>"><%= @item[:location] %></a> <a href="https://github.com/ukazap/blog/edit/main/content<%= @item.identifier %>" title="Suggest an edit">🖊️</a></p>
+              <p><a href="https://unsplash.com/photos/<%= thumbnail_id %>"><img src="<%= thumbnail_url %>"></a></p>
             </header>
 
             <%= yield %>

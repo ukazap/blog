@@ -3,6 +3,7 @@ kind: article
 title: About Me
 description: "Hi, my name is Ukaza and I love computers!"
 location: North Kuta, Bali
+thumbnail: SymZoeE8quA
 created_at: 2021/01/01 00:00:00 +0800
 ---
 
