@@ -1,5 +1,9 @@
 #!/usr/bin/env ruby
 
+compile '/dot-well-known/**/*' do
+  write item.identifier.to_s.sub('/dot-', '/.')
+end
+
 compile '/**/*.css' do
   write fingerprinted_name(item.identifier.to_s)
 end

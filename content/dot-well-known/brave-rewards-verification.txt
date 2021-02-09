@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: perdana.dev
+Token: 4637a0a3f25570dc78c50765d743012c5dc605fa2eee901497b35125dac8fef6
